@@ -1,0 +1,15 @@
+body {
+  font-family: "CascadiaCodePL", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: $color-text-primary;
+  background-color: $color-white;
+}
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}

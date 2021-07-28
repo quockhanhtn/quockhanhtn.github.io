@@ -1,0 +1,427 @@
+/*
+class Program
+{
+  static string GetFontWeight(string value)
+  {
+      if (value.Contains("ExtraLight")) return "200";
+      if (value.Contains("Light")) return "300";
+      if (value.Contains("Regular")) return "400";
+      if (value.Contains("SemiBold")) return "600";
+      if (value.Contains("Bold")) return "700";
+      if (value.Contains("Italic")) return "400";
+      return "";
+  }
+
+  static void Main(string[] args)
+  {
+      var listFont = Directory.GetFiles(@"D:\Github\quockhanhtn.github.io\assets\fonts\cascadia-code-2106.17\woff2");
+      var lines = new List<string>();
+
+      foreach (var font in listFont)
+      {
+        string fName = Path.GetFileNameWithoutExtension(font);
+        string fontName = fName.Split('-')[0];
+        string fontWeight = GetFontWeight(fName.Split('-')[1]);
+        string fontStyle = fontWeight.ToLower().Contains("italic") ? "italic" : "normal";
+
+        string fontFaces =
+            $"@font-face {{\n" +
+            $"  font-family: \"{fontName}\";\n" +
+            $"  src: url(\"../assets/fonts/cascadia-code-2106.17/woff2/{fName}.woff2\") format(\"woff2\"),\n" +
+            $"    url(\"../assets/fonts/cascadia-code-2106.17/ttf/{fName}.ttf\") format(\"truetype\");\n" +
+            $"  font-weight: {fontWeight};\n" +
+            $"  font-style: {fontStyle};\n" +
+            $"}}\n";
+
+        lines.Add(fontFaces);
+      }
+      File.WriteAllLines("_font-faces.scss", lines);
+  }
+}
+
+ */
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-Bold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-ExtraLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-Italic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-Light.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-LightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-Regular.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-SemiBoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-SemiLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCode-SemiLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCode-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-Bold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-ExtraLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-Italic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-Light.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-LightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-Regular.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-SemiBoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-SemiLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaCodePL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaCodePL-SemiLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaCodePL-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-Bold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-ExtraLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-Italic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-Light.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-LightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-Regular.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-SemiBoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-SemiLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMono";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMono-SemiLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMono-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-Bold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-ExtraLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-ExtraLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-Italic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-Light.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-LightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-Regular.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-SemiBoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-SemiLight.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CascadiaMonoPL";
+  src: url("../assets/fonts/cascadia-code-2106.17/woff2/CascadiaMonoPL-SemiLightItalic.woff2") format("woff2"),
+    url("../assets/fonts/cascadia-code-2106.17/ttf/CascadiaMonoPL-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
