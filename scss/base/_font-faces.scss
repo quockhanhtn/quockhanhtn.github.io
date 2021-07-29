@@ -1,0 +1,292 @@
+// Read more about font face https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+$cascadia-code-dir-woff2: '../assets/fonts/cascadia-code-2106.17/woff2/';
+$cascadia-code-dir-ttf: '../assets/fonts/cascadia-code-2106.17/ttf/';
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-Bold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-Bold.ttf', 'truetype',
+  700
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-BoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-BoldItalic.ttf', 'truetype',
+  700, italic
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-ExtraLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-ExtraLight.ttf', 'truetype',
+  200
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-ExtraLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-ExtraLightItalic.ttf', 'truetype',
+  200, italic
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-Italic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-Italic.ttf', 'truetype',
+  400, italic
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-Light.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-Light.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-LightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-LightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-Regular.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-Regular.ttf', 'truetype',
+  400
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-SemiBold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-SemiBold.ttf', 'truetype',
+  600
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-SemiBoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-SemiBoldItalic.ttf', 'truetype',
+  600, italic
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-SemiLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-SemiLight.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaCode',
+  $cascadia-code-dir-woff2 + 'CascadiaCode-SemiLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCode-SemiLightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-Bold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-Bold.ttf', 'truetype',
+  700
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-BoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-BoldItalic.ttf', 'truetype',
+  700, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-ExtraLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-ExtraLight.ttf', 'truetype',
+  200
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-ExtraLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-ExtraLightItalic.ttf', 'truetype',
+  200, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-Italic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-Italic.ttf', 'truetype',
+  400, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-Light.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-Light.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-LightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-LightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-Regular.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-Regular.ttf', 'truetype',
+  400
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-SemiBold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-SemiBold.ttf', 'truetype',
+  600
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-SemiBoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-SemiBoldItalic.ttf', 'truetype',
+  600, italic
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-SemiLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-SemiLight.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaCodePL',
+  $cascadia-code-dir-woff2 + 'CascadiaCodePL-SemiLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaCodePL-SemiLightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-Bold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-Bold.ttf', 'truetype',
+  700
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-BoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-BoldItalic.ttf', 'truetype',
+  700, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-ExtraLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-ExtraLight.ttf', 'truetype',
+  200
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-ExtraLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-ExtraLightItalic.ttf', 'truetype',
+  200, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-Italic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-Italic.ttf', 'truetype',
+  400, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-Light.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-Light.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-LightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-LightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-Regular.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-Regular.ttf', 'truetype',
+  400
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-SemiBold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-SemiBold.ttf', 'truetype',
+  600
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-SemiBoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-SemiBoldItalic.ttf', 'truetype',
+  600, italic
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-SemiLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-SemiLight.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaMono',
+  $cascadia-code-dir-woff2 + 'CascadiaMono-SemiLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMono-SemiLightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-Bold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-Bold.ttf', 'truetype',
+  700
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-BoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-BoldItalic.ttf', 'truetype',
+  700, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-ExtraLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-ExtraLight.ttf', 'truetype',
+  200
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-ExtraLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-ExtraLightItalic.ttf', 'truetype',
+  200, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-Italic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-Italic.ttf', 'truetype',
+  400, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-Light.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-Light.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-LightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-LightItalic.ttf', 'truetype',
+  300, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-Regular.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-Regular.ttf', 'truetype',
+  400
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-SemiBold.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-SemiBold.ttf', 'truetype',
+  600
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-SemiBoldItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-SemiBoldItalic.ttf', 'truetype',
+  600, italic
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-SemiLight.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-SemiLight.ttf', 'truetype',
+  300
+);
+
+@include font-face('CascadiaMonoPL',
+  $cascadia-code-dir-woff2 + 'CascadiaMonoPL-SemiLightItalic.woff2', 'woff2',
+  $cascadia-code-dir-ttf + 'CascadiaMonoPL-SemiLightItalic.ttf', 'truetype',
+  300, italic
+);

@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @include media-query(575px, 'min') { max-width: 100%; }
+  @include media-query(576px, 'max') { max-width: 540px; }
+  @include media-query(768px, 'max') { max-width: 720px; }
+  @include media-query(992px, 'max') { max-width: 960px; }
+  @include media-query(1200px, 'max') { max-width: 1140px; }
+  @include media-query(1400px, 'max') { max-width: 1320px; } 
+}
+.container-fluid {
+  width: 100%;
+}

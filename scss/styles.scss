@@ -1,4 +1,10 @@
-@import "variables";
-@import "reset";
-@import "font-faces";
-@import "global";
+@import "./abstracts/variables";
+@import './abstracts/mixins';
+@import './abstracts/functions';
+
+@import "./base/reset";
+@import "./base/font-faces";
+@import "./base/base";
+@import "./base/utils";
+
+@import "./components/container";
